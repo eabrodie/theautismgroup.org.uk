@@ -13,6 +13,10 @@ app.get('/about', function (req, res, next) {
   res.sendFile(__dirname + '/about.html');
 });
 
+app.get('/contact', function (req, res, next) {
+  res.sendFile(__dirname + '/contact.html');
+});
+
 app.get('/style.css', function (req, res, next) {
   res.type('css');
   res.send(
@@ -28,8 +32,8 @@ app.get('/logo-white.svg', function (req, res, next) {
   res.sendFile(__dirname + '/images/logo-white.svg');
 });
 
-app.get('/child.jpg', function (req, res, next) {
-  res.sendFile(__dirname + '/example4/images/child.jpg');
+app.get('/main-image.jpg', function (req, res, next) {
+  res.sendFile(__dirname + '/images/main-image.jpg');
 });
 
 module.exports = app.listen(3000);
