@@ -1,0 +1,21 @@
+{
+  "name": "theautismgroup.org.uk",
+  "private": true,
+  "description": "The Autism Group",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.0",
+    "s3": "^4.4.0",
+    "stop": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo No Tests",
+    "deploy": "rimraf out && node deploy && rimraf out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eabrodie/theautismgroup.org.uk.git"
+  }
+}
