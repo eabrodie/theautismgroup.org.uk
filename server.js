@@ -33,7 +33,7 @@ app.get('/logo-white.svg', function (req, res, next) {
 });
 
 app.get('/main-image.jpg', function (req, res, next) {
-  res.sendFile(__dirname + '/images/main-image.jpg');
+  res.sendFile(__dirname + '/images/main-image-small.jpg');
 });
 
 module.exports = app.listen(3000);
