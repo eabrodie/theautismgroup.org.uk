@@ -19,9 +19,7 @@ app.get('/contact', function (req, res, next) {
 
 app.get('/style.css', function (req, res, next) {
   res.type('css');
-  res.send(
-    fs.readFileSync(__dirname + '/style/style.css', 'utf8')
-  );
+  res.sendFile(__dirname + '/style/style2.css', 'utf8');
 });
 
 app.get('/logo-white-teal.svg', function (req, res, next) {

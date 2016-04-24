@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Helvetica', 'Ariel', sans-serif;
+  color: #000000;
+  background-color: #c9e6e5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #00a0aa;
+}
+h2 {
+  font-size: 1.3em;
+  color: #00a0aa;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background-color: #00a0aa;
+  width: 100vw;
+  border-bottom-width: 0.2em;
+  border-bottom-color: #000000;
+  border-bottom-style: solid;
+}
+
+.logo-box {
+  padding-left: 50px;
+  padding-top: 5px;
+}
+
+.navbar li + li:before {
+  content:'\00B7';
+  padding-right: 12px;
+}
+
+.navbar li {
+  font-family: 'Helvetica', 'Ariel', sans-serif;
+  display: inline;
+  list-style: none;
+  padding-right: 15px;
+  font-style: none;
+  font-weight: bolder;
+}
+
+.navbar a:link, a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Helvetica Neue Bold', 'Helvetica', 'Ariel', sans-serif;
+}
+
+.navbar a:hover {
+  color: #c9e6e5;
+}
+
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100vw;
+  font-size: 0.7em;
+  padding: 20px;
+}
+
+.main-image-section {
+    background: #2E1811;
+    background-image: url("/logo-white-teal.svg"),
+                      url("/main-image.jpg");
+    background-size: 50% 50%, cover;
+    background-position: 2em 2em, top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 20em 1em 1em 1em;
+    border-bottom-width: 0.2em;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+}
+.image-text {
+  font-family: 'Corbel Bold', sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: bolder;
+  text-shadow: 2px 2px 10px black, -2px -2px 10px black;
+}
+
+.service-bar {
+  color: #ffffff;
+  background-color: #00a0aa;
+  width: 100vw;
+  text-align: center;
+  padding: 0.5em;
+} .service-bar h1 {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.three-cols {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.three-cols > div {
+  min-width: 200px;
+  text-align: center;
+  padding: 2em;
+}
