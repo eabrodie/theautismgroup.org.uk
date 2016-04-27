@@ -16,7 +16,7 @@ stop.getWebsiteStream('http://localhost:3000', {
 })
 //.syphon(stop.addFavicon())
 .syphon(stop.minifyJS())
-.syphon(stop.minifyCSS({deadCode: true, silent: true}))
+.syphon(stop.minifyCSS({deadCode: true}))
 .syphon(stop.log())
 .syphon(stop.checkStatusCodes([200]))
 .syphon(stop.writeFileSystem(__dirname + '/out'))
