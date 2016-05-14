@@ -45,4 +45,8 @@ app.get('/main-image.jpg', function (req, res, next) {
   res.sendFile(__dirname + '/images/main-image-small.jpg');
 });
 
+app.get('/flyer.pdf', function (req, res, next) {
+  res.sendFile(__dirname + '/Pok-magic.pdf');
+});
+
 module.exports = app.listen(3000);
