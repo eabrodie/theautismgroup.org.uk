@@ -1,0 +1,5 @@
+name="Blog Post"
+
+[fields]
+title="text"
+content="html"
