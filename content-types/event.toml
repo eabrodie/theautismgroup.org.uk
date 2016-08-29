@@ -2,4 +2,4 @@ name="Event"
 
 [fields]
 title="text"
-content="html"
+body="html"
