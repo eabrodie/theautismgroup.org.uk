@@ -10,7 +10,7 @@ app.get('/', function (req, res, next) {
 });
 
 app.get('/about', function (req, res, next) {
-  res.sendFile(__dirname + '/about.html');
+  res.render('about.pug');
 });
 
 app.get('/contact', function (req, res, next) {
