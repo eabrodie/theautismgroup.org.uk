@@ -6,23 +6,23 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res, next) {
-  res.sendFile(__dirname + '/index.html');
+  res.render('index.pug');
 });
 
 app.get('/about', function (req, res, next) {
-  res.sendFile(__dirname + '/about.html');
+  res.render('about.pug');
 });
 
 app.get('/contact', function (req, res, next) {
-  res.sendFile(__dirname + '/contact.html');
+  res.render('contact.pug');
 });
 
 app.get('/groups', function (req, res, next) {
-  res.sendFile(__dirname + '/groups.html');
+  res.render('groups.pug');
 });
 
 app.get('/training', function (req, res, next) {
-  res.sendFile(__dirname + '/training.html');
+  res.render('training.pug');
 });
 
 app.get('/style.css', function (req, res, next) {
