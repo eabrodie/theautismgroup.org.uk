@@ -15,13 +15,9 @@ function page(name) {
   };
 }
 
-app.get('/about', function (req, res, next) {
-  res.render('about.pug');
-});
+app.get('/about', page('about'));
 
-app.get('/contact', function (req, res, next) {
-  res.render('contact.pug');
-});
+app.get('/contact', page('contact'));
 
 app.get('/groups', page('groups'));
 
