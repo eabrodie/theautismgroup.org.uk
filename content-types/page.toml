@@ -1,0 +1,5 @@
+name="Blog Post"
+can-create=false
+
+[fields]
+body="html"

@@ -9,6 +9,12 @@ app.get('/', function (req, res, next) {
   res.render('index.pug');
 });
 
+function page(name) {
+  return (req, res, next) => {
+    res.render('page.pug', JSON.parse(fs.readFileSync(__dirname + '/content/page/' + name, 'utf8')));
+  };
+}
+
 app.get('/about', function (req, res, next) {
   res.render('about.pug');
 });
@@ -17,9 +23,7 @@ app.get('/contact', function (req, res, next) {
   res.render('contact.pug');
 });
 
-app.get('/groups', function (req, res, next) {
-  res.render('groups.pug');
-});
+app.get('/groups', page('groups'));
 
 app.get('/training', function (req, res, next) {
   res.render('training.pug');
