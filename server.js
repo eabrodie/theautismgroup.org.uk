@@ -22,7 +22,7 @@ app.get('/groups', function (req, res, next) {
 });
 
 app.get('/training', function (req, res, next) {
-  res.sendFile(__dirname + '/training.html');
+  res.render('training.pug');
 });
 
 app.get('/style.css', function (req, res, next) {
