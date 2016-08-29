@@ -18,7 +18,7 @@ app.get('/contact', function (req, res, next) {
 });
 
 app.get('/groups', function (req, res, next) {
-  res.sendFile(__dirname + '/groups.html');
+  res.render('groups.pug');
 });
 
 app.get('/training', function (req, res, next) {
