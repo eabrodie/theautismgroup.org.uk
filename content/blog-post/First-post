@@ -1,5 +1,6 @@
 {
+  "id": "First-post",
   "contentType": "blog-post",
   "title": "First post",
-  "body": "<p>New post</p>"
+  "body": "<p>New post edit</p>"
 }
