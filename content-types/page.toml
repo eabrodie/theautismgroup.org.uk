@@ -1,5 +1,5 @@
 name="Blog Post"
-can-create=false
+canCreate=false
 
 [fields]
 body="html"
