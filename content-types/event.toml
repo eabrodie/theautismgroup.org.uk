@@ -1,4 +1,5 @@
 name="Event"
+canCreate=true
 
 [fields]
 title="text"

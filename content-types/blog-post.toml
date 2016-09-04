@@ -1,4 +1,5 @@
 name="Blog Post"
+canCreate=true
 
 [fields]
 title="text"
