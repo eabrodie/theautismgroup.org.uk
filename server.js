@@ -25,6 +25,10 @@ app.get('/training', function (req, res, next) {
   res.render('training.pug');
 });
 
+app.get('/events', function (req, res, next) {
+  res.render('events.pug');
+});
+
 app.get('/style.css', function (req, res, next) {
   res.type('css');
   res.send(
@@ -46,7 +50,11 @@ app.get('/main-image.jpg', function (req, res, next) {
 });
 
 app.get('/flyer.pdf', function (req, res, next) {
-  res.sendFile(__dirname + '/Pok-magic.pdf');
+  res.sendFile(__dirname + '/images/Pok-magic.pdf');
+});
+
+app.get('/quiz.pdf', function (req, res, next) {
+  res.sendFile(__dirname + '/images/Quiz-night-Oct.pdf');
 });
 
 module.exports = app.listen(3000);
